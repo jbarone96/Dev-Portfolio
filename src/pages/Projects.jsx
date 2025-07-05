@@ -6,7 +6,7 @@ const projects = [
     tech: ["SwiftUI", "AstronomyAPI", "OpenWeatherMap"],
     link: "https://apps.apple.com/us/app/lunaro/id6744329460",
     github: "https://github.com/jbarone96/Lunaro",
-    image: "public/lunaro_mockup.png",
+    image: "/lunaro_mockup.png",
   },
   {
     title: "ShopEasy",
@@ -15,7 +15,7 @@ const projects = [
     tech: ["React", "Firebase", "TailwindCSS"],
     link: "https://shop-easy-five.vercel.app/",
     github: "https://github.com/jbarone96/ShopEasy",
-    image: "public/shopeasy_mockup.png",
+    image: "/shopeasy_mockup.png",
   },
   {
     title: "Budgetize",
@@ -24,7 +24,7 @@ const projects = [
     tech: ["React", "TypeScript", "TailwindCSS"],
     link: "https://budgetize-app.vercel.app/",
     github: "https://github.com/jbarone96/Budgetize",
-    image: "public/budgetize_mockup.png",
+    image: "/budgetize_mockup.png",
   },
   {
     title: "Travaio",
@@ -33,7 +33,7 @@ const projects = [
     tech: ["React", "TailwindCSS", "RapidAPI"],
     link: "https://travaio.vercel.app/",
     github: "https://github.com/jbarone96/Travaio",
-    image: "public/travaio_mockup.png",
+    image: "/travaio_mockup.png",
   },
   {
     title: "Sine Innovations",
@@ -42,7 +42,7 @@ const projects = [
     tech: ["Next.js", "TailwindCSS", "Vercel"],
     link: "https://www.sineinnovations.com/",
     github: "https://github.com/jbarone96/Sine-Innovations",
-    image: "public/sineinnovations_mockup.jpg",
+    image: "/sineinnovations_mockup.jpg",
   },
 ];
 
