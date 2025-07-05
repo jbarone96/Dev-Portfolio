@@ -1,12 +1,21 @@
 const projects = [
   {
+    title: "Lunaro",
+    description:
+      "A beautifully designed moon phase tracking app on the App Store, offering real-time lunar data, realistic visuals, and daily insights.",
+    tech: ["SwiftUI", "AstronomyAPI", "OpenWeatherMap"],
+    link: "https://apps.apple.com/us/app/lunaro/id6744329460",
+    github: "https://github.com/jbarone96/Lunaro",
+    image: "public/lunaro_mockup.png",
+  },
+  {
     title: "ShopEasy",
     description:
       "A Firebase-backed mobile shopping app with authentication, real product listings, and responsive UI.",
     tech: ["React", "Firebase", "TailwindCSS"],
     link: "https://shop-easy-five.vercel.app/",
     github: "https://github.com/jbarone96/ShopEasy",
-    image: "/shopeasy_mockup.jpg",
+    image: "public/shopeasy_mockup.png",
   },
   {
     title: "Budgetize",
@@ -15,16 +24,16 @@ const projects = [
     tech: ["React", "TypeScript", "TailwindCSS"],
     link: "https://budgetize-app.vercel.app/",
     github: "https://github.com/jbarone96/Budgetize",
-    image: "/budgetize_mockup.jpg",
+    image: "public/budgetize_mockup.png",
   },
   {
-    title: "Globetrottr",
+    title: "Travaio",
     description:
-      "An Expedia-style travel booking web app offering flight and hotel search with sleek, responsive UI.",
-    tech: ["Next.js", "TailwindCSS", "RapidAPI"],
-    link: "#",
-    github: "https://github.com/yourusername/globetrottr",
-    image: "/placeholder-3.jpg",
+      "A sleek, professional travel booking site clone with full booking flow, hotel/flight listings, and a modern responsive layout.",
+    tech: ["React", "TailwindCSS", "RapidAPI"],
+    link: "https://travaio.vercel.app/",
+    github: "https://github.com/jbarone96/Travaio",
+    image: "public/travaio_mockup.png",
   },
   {
     title: "Sine Innovations",
@@ -33,7 +42,7 @@ const projects = [
     tech: ["Next.js", "TailwindCSS", "Vercel"],
     link: "https://www.sineinnovations.com/",
     github: "https://github.com/jbarone96/Sine-Innovations",
-    image: "/sineinnovations_mockup.jpg",
+    image: "public/sineinnovations_mockup.jpg",
   },
 ];
 
@@ -58,12 +67,12 @@ const Projects = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
               data-aos-once="false"
-              className="bg-primary p-6 rounded-lg shadow-lg text-left hover:shadow-xl transition-shadow"
+              className="bg-primary p-6 rounded-lg shadow-lg text-left transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
             >
               <img
                 src={project.image}
                 alt={`${project.title} preview`}
-                className="w-full h-48 object-cover rounded mb-4"
+                className="w-full max-h-[500px] object-contain mb-4"
               />
               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
               <p className="text-secondary mb-4">{project.description}</p>

@@ -9,12 +9,12 @@ const experienceData = [
     location: "Remote",
     date: "Nov. 2022 – Present",
     points: [
-      "Built and launched an Instagram-style Stories feature in React on the Belk mobile app, driving a 29% sales lift.",
-      "Engineered SEO-optimized HTML/CSS content pages that boosted web traffic by 34%.",
-      "Led front-end efforts on the Belk homepage, mobile app, coupon, and category pages using React, JavaScript, and CSS.",
-      "Collaborated with design teams to develop engaging, high-converting digital assets while streamlining workflows.",
-      "Implemented innovative content strategies to enhance user experience and digital engagement.",
-      "Used project management tools to coordinate effectively with cross-functional teams.",
+      "Led development of Belk’s homepage, category pages, coupon modules, and mobile app UI using React, JavaScript, and modern HTML/CSS, resulting in a 29% increase in mobile sales.",
+      "Created an Instagram-style “Stories” feature with React, contributing significantly to the uplift in user engagement and in-app revenue.",
+      "Designed and built SEO-optimized, responsive web pages that boosted organic traffic by 34%.",
+      "Collaborated with creative and UX teams to produce high-converting digital content across web, mobile, and email platforms.",
+      "Developed and maintained responsive marketing emails and dynamic templates, ensuring consistent rendering across major clients and improving open/click-through rates.",
+      "Streamlined content workflows and optimized production processes, reducing turnaround time and increasing team efficiency.",
     ],
   },
   {
@@ -23,9 +23,10 @@ const experienceData = [
     location: "Remote",
     date: "Oct. 2022 – Sep. 2023",
     points: [
-      "Mentored aspiring developers on full-stack concepts including JavaScript, React, Node, and Express.",
-      "Supported instructors with grading, technical feedback, and classroom management in a virtual environment.",
-      "Provided 1-on-1 coaching and technical assistance to improve student retention and confidence.",
+      "Mentored aspiring software developers in JavaScript, React, Node.js, and Express, providing hands-on guidance and career-focused support to help them build real-world skills and confidence.",
+      "Collaborated with instructors to manage classroom dynamics and foster a supportive, focused learning environment.",
+      "Reviewed and graded coding assignments and technical assessments, delivering constructive feedback to accelerate student growth and understanding.",
+      "Supported both new and intermediate learners by simplifying complex concepts, answering questions, and promoting best practices in modern web development.",
     ],
   },
 ];

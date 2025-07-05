@@ -18,6 +18,15 @@ const About = () => {
           commitment to clean, modular code, I strive to craft experiences that
           feel as good as they look. (Placeholder bio here.)
         </p>
+        <div className="mt-8" data-aos="fade-up" data-aos-delay="300">
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-block bg-[#915EFF] text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-[#915EFF] transition-colors duration-300"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </section>
   );
