@@ -24,7 +24,7 @@ const About = () => {
         </p>
         <div className="mt-8" data-aos="fade-up" data-aos-delay="300">
           <a
-            href="/resume.pdf"
+            href="public/resume/resume.pdf"
             download="Jordan_Barone_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
