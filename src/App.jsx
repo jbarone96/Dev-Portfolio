@@ -13,9 +13,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
-// import { StarsCanvas } from "./canvas/StarsCanvas";
-// import EarthCanvas from "./canvas/EarthCanvas";
-
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -28,17 +25,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary text-white font-inter">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <>
           <Navbar />
           <Hero />
-        </div>
+        </>
         <About />
         <Experience />
         <Projects />
         <div className="relative z-0">
           <Contact />
-          {/* <StarsCanvas /> */}
-          {/* <EarthCanvas /> */}
         </div>
         <Footer />
       </div>

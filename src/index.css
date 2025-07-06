@@ -5,3 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+canvas {
+  position: relative !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}

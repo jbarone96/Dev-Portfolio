@@ -25,7 +25,8 @@ const EarthCanvas = () => {
       shadows
       camera={{ position: [0, 0, 6], fov: 45 }}
       gl={{ preserveDrawingBuffer: true }}
-      style={{ height: "400px" }}
+      style={{ position: "relative", zIndex: 0 }}
+      className="w-full h-full"
     >
       <Suspense fallback={null}>
         <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.8} />
