@@ -2,12 +2,19 @@ import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 
 const Navbar = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.history.pushState(null, "", window.location.pathname);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="w-full z-50 sticky top-0">
       <div className="backdrop-blur-md bg-primary bg-opacity-80 h-20">
         <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <a
-            href="/"
+            href="#"
+            onClick={scrollToTop}
             className="text-white text-2xl font-bold transition-colors duration-300 hover:text-[#915EFF]"
           >
             Jordan Barone

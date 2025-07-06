@@ -1,6 +1,6 @@
-// canvas/Contact.jsx
-
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -10,11 +10,49 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder — wire up EmailJS or backend later
-    alert("Message sent (placeholder)");
-    setForm({ name: "", email: "", message: "" });
+
+    if (form.name.trim().length < 2) {
+      return toast.error("Please enter a valid name.");
+    }
+
+    if (!validateEmail(form.email)) {
+      return toast.error("Please enter a valid email address.");
+    }
+
+    if (form.message.trim().length < 10) {
+      return toast.error("Message must be at least 10 characters long.");
+    }
+
+    toast.loading("Sending message...");
+
+    emailjs
+      .send(
+        "service_irbszjh",
+        "template_dddbno8",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        "LtL1Chg6C50uheOHe"
+      )
+      .then(() => {
+        toast.dismiss();
+        toast.success("Message sent successfully!");
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((err) => {
+        toast.dismiss();
+        console.error(err);
+        toast.error("Failed to send message.");
+      });
   };
 
   return (

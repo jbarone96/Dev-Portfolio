@@ -3,6 +3,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
+import { Toaster } from "react-hot-toast";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <Toaster position="top-right" />
       <div className="relative z-0 bg-primary text-white font-inter">
         <>
           <Navbar />
