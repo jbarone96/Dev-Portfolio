@@ -4,13 +4,13 @@ import { createPortal } from "react-dom";
 const Navbar = () => {
   const scrollToTop = (e) => {
     e.preventDefault();
-    window.history.pushState(null, "", window.location.pathname);
+    window.history.pushState(null, "", window.location.pathname); // Clear any hash
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <div className="w-full z-50 sticky top-0">
-      <div className="backdrop-blur-md bg-primary bg-opacity-80 h-20">
+      <div className="relative z-[99999] backdrop-blur-md bg-primary bg-opacity-80 h-20">
         <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <a
             href="#"
@@ -57,7 +57,9 @@ const MobileMenu = () => {
   }, []);
 
   const dropdown = (
-    <ul className="absolute top-20 right-4 z-[99999] bg-tertiary text-white rounded-xl p-4 space-y-2 shadow-lg">
+    <ul
+      className={`fixed top-20 right-4 z-[99999] bg-tertiary text-white rounded-xl p-4 space-y-2 shadow-lg transform transition-all duration-300 ease-in-out ${open ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}
+    >
       <li>
         <a href="#about" onClick={() => setOpen(false)}>
           About
@@ -89,8 +91,7 @@ const MobileMenu = () => {
       >
         {open ? "×" : "☰"}
       </button>
-      {open &&
-        mounted &&
+      {mounted &&
         createPortal(dropdown, document.getElementById("dropdown-root"))}
     </div>
   );
