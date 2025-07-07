@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen mx-auto flex flex-col-reverse sm:flex-row items-center justify-center gap-[120px] sm:gap-10 bg-primary px-6"
+      className="relative w-full min-h-screen mx-auto flex flex-col-reverse sm:flex-row items-center justify-center gap-[120px] -mt-20 sm:gap-10 bg-primary px-6"
     >
       <div className="max-w-xl text-center sm:text-left relative z-10">
         <h1
@@ -21,7 +21,7 @@ const Hero = () => {
           data-aos-delay="400"
         >
           I build visually engaging, interactive front-end experiences that
-          blend design and performance.
+          blend design and performance
         </p>
       </div>
 
@@ -30,7 +30,7 @@ const Hero = () => {
         data-aos="fade-up"
         data-aos-delay="600"
       >
-        <div className="w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[300px] md:h-[350px] lg:w-[500px] lg:h-[500px]">
+        <div className="w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
           <EarthCanvas />
         </div>
       </div>
