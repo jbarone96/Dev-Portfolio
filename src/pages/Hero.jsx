@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen mx-auto flex flex-col-reverse sm:flex-row items-center justify-center gap-[150px] pt-6 sm:gap-10 bg-primary px-6"
+      className="relative w-full min-h-screen mx-auto flex flex-col-reverse sm:flex-row items-center justify-center gap-[120px] sm:gap-10 bg-primary px-6"
     >
       <div className="max-w-xl text-center sm:text-left relative z-10">
         <h1
